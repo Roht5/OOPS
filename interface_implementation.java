@@ -5,13 +5,19 @@ interface Device {
     void turnOn();
     void turnOff();
 }
+interface Movable {
+    // Actions that any device must have
+    void turnOn();
+    void turnOff();
+}
 
 // Phone class follows the Device interface
-class Phone implements Device {
+class Phone implements Device,Movable {
     // Implementation of turnOn for Phone
     public void turnOn() {
         System.out.println("Phone turns on");
     }
+    
 
     // Implementation of turnOff for Phone
     public void turnOff() {

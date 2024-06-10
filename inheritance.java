@@ -1,7 +1,9 @@
- // Parent class: Vehicle
+// Parent class: Vehicle
 class Vehicle {
-    // Common behavior
-    public void move() {
+    // Common behavio
+    int a;
+
+    final public void move() {
         System.out.println("Vehicle moves");
     }
 }
@@ -10,8 +12,10 @@ class Vehicle {
 class Car extends Vehicle {
     // Specialized behavior for Car
     public void honk() {
+        int c = a;
         System.out.println("Car honks");
     }
+
 }
 
 // Another child class: Bicycle
@@ -35,4 +39,5 @@ public class inheritance {
         myBicycle.move(); // Vehicle moves
         myBicycle.ringBell(); // Bicycle rings bell
     }
+
 }
